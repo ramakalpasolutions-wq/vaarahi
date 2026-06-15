@@ -1,26 +1,527 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --teal: #0d7377;
+  --teal-light: #14919b;
+  --teal-dark: #0a5c5f;
+  --teal-deep: #073b3e;
+  --cream: #fdf6ec;
+  --cream-dark: #f5e6cc;
+  --cream-light: #fefaf4;
+  --gold: #c8a656;
+  --gold-light: #d4b76a;
+  --dark: #0a1a1b;
+  --dark-2: #0f2627;
+  --dark-3: #143536;
+  --white: #ffffff;
+  --text-dark: #1a2e2f;
+  --text-light: #5a7a7c;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  overflow-x: hidden;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--cream-dark); }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 4px; }
+
+/* ============================================
+   ✨ ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-teal {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(13,115,119,0.4); }
+  50% { box-shadow: 0 0 0 20px rgba(13,115,119,0); }
+}
+
+@keyframes shine {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* ============================================
+   🎬 KEN BURNS ANIMATIONS (Cinematic Effect)
+   ============================================ */
+
+/* Main Ken Burns - Zoom + Pan (Recommended) */
+@keyframes kenBurnsZoom {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.15) translate(-1%, -1%);
+  }
+  100% {
+    transform: scale(1.2) translate(1%, 1%);
+  }
+}
+
+/* Slow Zoom In */
+@keyframes kenBurnsZoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Slow Zoom Out */
+@keyframes kenBurnsZoomOut {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Pan Right + Zoom */
+@keyframes kenBurnsPanRight {
+  from {
+    transform: scale(1.1) translateX(-3%);
+  }
+  to {
+    transform: scale(1.2) translateX(3%);
+  }
+}
+
+/* Pan Left + Zoom */
+@keyframes kenBurnsPanLeft {
+  from {
+    transform: scale(1.1) translateX(3%);
+  }
+  to {
+    transform: scale(1.2) translateX(-3%);
+  }
+}
+
+/* Hero Content Fade Up */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Badge Bounce In */
+@keyframes badgeBounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Title Slide Up */
+@keyframes titleSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bounce (for scroll indicator) */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+/* Scroll Dot Animation */
+@keyframes scrollDot {
+  0% {
+    top: 6px;
+    opacity: 1;
+  }
+  100% {
+    top: 24px;
+    opacity: 0;
+  }
+}
+
+/* Button Pulse */
+@keyframes btnPulse {
+  0%, 100% {
+    box-shadow: 0 8px 24px rgba(13,115,119,0.45);
+  }
+  50% {
+    box-shadow: 0 8px 24px rgba(13,115,119,0.45), 0 0 0 12px rgba(13,115,119,0.15);
+  }
+}
+
+/* Spin (for loading) */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Fade In (simple) */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Progress Bar Fill */
+@keyframes fillBar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* ============================================
+   🎨 ANIMATION UTILITY CLASSES
+   ============================================ */
+
+.animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
+.animate-fadeInLeft { animation: fadeInLeft 0.8s ease-out forwards; }
+.animate-fadeInRight { animation: fadeInRight 0.8s ease-out forwards; }
+.animate-scaleIn { animation: scaleIn 0.6s ease-out forwards; }
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-slideDown { animation: slideDown 0.5s ease-out forwards; }
+
+/* 🎬 KEN BURNS CLASSES */
+.ken-burns-image {
+  animation: kenBurnsZoom 15s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+.ken-burns-zoom-in {
+  animation: kenBurnsZoomIn 15s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+.ken-burns-zoom-out {
+  animation: kenBurnsZoomOut 15s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+.ken-burns-pan-right {
+  animation: kenBurnsPanRight 15s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+.ken-burns-pan-left {
+  animation: kenBurnsPanLeft 15s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+/* HERO CONTENT ANIMATIONS */
+.hero-content-fade {
+  animation: heroFadeUp 1.5s ease-out 0.3s both;
+}
+
+.hero-back-btn {
+  animation: fadeIn 1s ease-out 0.5s both;
+}
+
+.hero-back-btn:hover {
+  background: rgba(255,255,255,0.25) !important;
+  transform: translateY(-2px);
+}
+
+.hero-badge {
+  animation: badgeBounceIn 1s ease-out 0.8s both;
+}
+
+.hero-title {
+  animation: titleSlideUp 1.2s ease-out 1s both;
+}
+
+.hero-location {
+  animation: heroFadeUp 1s ease-out 1.4s both;
+}
+
+/* SCROLL INDICATOR */
+.scroll-indicator {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.scroll-dot {
+  animation: scrollDot 1.5s ease-in-out infinite;
+}
+
+/* BUTTON PULSE */
+.btn-pulse {
+  animation: btnPulse 2s ease-in-out infinite;
+}
+
+/* ============================================
+   🎨 GRADIENT TEXTS
+   ============================================ */
+
+.teal-text {
+  background: linear-gradient(135deg, #0d7377, #14919b, #0d7377);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #c8a656, #f0d78c, #c8a656);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   🔘 BUTTONS
+   ============================================ */
+
+.btn-teal {
+  background: linear-gradient(135deg, #0d7377, #14919b);
+  color: #ffffff;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(13,115,119,0.3);
+}
+
+.btn-teal:hover {
+  background: linear-gradient(135deg, #14919b, #1aabb6);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(13,115,119,0.4);
+}
+
+.btn-teal-outline {
+  background: transparent;
+  color: #0d7377;
+  padding: 13px 36px;
+  border: 2px solid #0d7377;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-teal-outline:hover {
+  background: #0d7377;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(13,115,119,0.3);
+}
+
+.btn-cream {
+  background: linear-gradient(135deg, #fdf6ec, #f5e6cc);
+  color: #0d7377;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-cream:hover {
+  background: linear-gradient(135deg, #ffffff, #fdf6ec);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* ============================================
+   📦 LAYOUT
+   ============================================ */
+
+.container-custom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+/* ============================================
+   🎴 CARDS
+   ============================================ */
+
+.card-hover {
+  transition: all 0.4s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(13,115,119,0.1);
+}
+
+/* ============================================
+   📝 INPUTS
+   ============================================ */
+
+.input-teal {
+  background: rgba(255,255,255,0.9);
+  border: 2px solid #e0dcd4;
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: #1a2e2f;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-teal:focus {
+  border-color: #0d7377;
+  box-shadow: 0 0 0 4px rgba(13,115,119,0.1);
+  background: #ffffff;
+}
+
+.input-teal::placeholder {
+  color: #999;
+}
+
+/* Admin Inputs */
+.input-admin {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(13,115,119,0.3);
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.input-admin:focus {
+  border-color: #14919b;
+  box-shadow: 0 0 0 3px rgba(20,145,155,0.15);
+  background: rgba(255,255,255,0.08);
+}
+
+.input-admin::placeholder { color: #5a7a7c; }
+
+/* ============================================
+   ✨ GLASS EFFECT
+   ============================================ */
+
+.glass-cream {
+  background: rgba(253,246,236,0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* ============================================
+   🔐 ADMIN
+   ============================================ */
+
+.admin-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(13,115,119,0.15);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.admin-card:hover {
+  border-color: rgba(13,115,119,0.25);
+}
+
+/* ============================================
+   📱 MOBILE
+   ============================================ */
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 40;
+}
+
+/* ============================================
+   🎨 EXTRAS
+   ============================================ */
+
+/* Divider */
+.teal-divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, #0d7377, #14919b);
+  border-radius: 2px;
+  margin: 16px auto 0;
+}
+
+/* No scrollbar */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
