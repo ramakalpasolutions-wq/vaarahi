@@ -40,7 +40,7 @@ const getAdminEmailHTML = (data) => `
     <div class="container">
       <div class="header">
         <h1>🔔 New Contact Inquiry</h1>
-        <p>Akshaya builders & constructions Website</p>
+        <p>Akshaya Builders & Developers Website</p>
         <div class="badge">NEW MESSAGE</div>
       </div>
       <div class="body">
@@ -71,7 +71,7 @@ const getAdminEmailHTML = (data) => `
         </div>
       </div>
       <div class="footer">
-        <strong style="font-family:'Playfair Display',serif;font-size:14px;">Akshaya builders & constructions</strong><br>
+        <strong style="font-family:'Playfair Display',serif;font-size:14px;">Akshaya Builders & Developers</strong><br>
         <span style="opacity:0.7;">Reply directly to this email to contact ${data.name}</span>
       </div>
     </div>
@@ -109,7 +109,7 @@ const getUserEmailHTML = (data) => `
       </div>
       <div class="body">
         <p>Dear <strong>${data.name}</strong>,</p>
-        <p>Thank you for reaching out to <strong style="color:#0d7377;">Akshaya builders & constructions</strong>! We've received your inquiry and our team will get back to you within <strong style="color:#ff6b35;">24 hours</strong>.</p>
+        <p>Thank you for reaching out to <strong style="color:#0d7377;">Akshaya Builders & Developers</strong>! We've received your inquiry and our team will get back to you within <strong style="color:#ff6b35;">24 hours</strong>.</p>
         
         <div class="summary">
           <h3 style="margin:0 0 10px;color:#0d7377;font-size:14px;">📝 Your Message Summary:</h3>
@@ -120,21 +120,21 @@ const getUserEmailHTML = (data) => `
 
         <p>In the meantime, feel free to explore our latest projects and offerings:</p>
         <center>
-          <a href="https://Akshaya builders & constructionsinfra.com" class="btn">Visit Our Website</a>
+          <a href="https://Akshaya Builders & Developersinfra.com" class="btn">Visit Our Website</a>
         </center>
 
         <div class="contact-info">
           <h3 style="margin:0 0 12px;color:#0d7377;font-family:'Playfair Display',serif;">📞 Need Immediate Assistance?</h3>
           <p style="margin:6px 0;">📱 <strong>+91 98765 43210</strong></p>
-          <p style="margin:6px 0;">📧 <strong>info@Akshaya builders & constructionsinfra.com</strong></p>
+          <p style="margin:6px 0;">📧 <strong>info@Akshaya Builders & Developersinfra.com</strong></p>
           <p style="margin:6px 0;">📍 Hyderabad, Telangana, India</p>
           <p style="margin:6px 0;">🕐 Mon-Sat: 9AM - 7PM</p>
         </div>
 
-        <p style="margin-top:24px;color:#5a7a7c;font-size:13px;">Best Regards,<br><strong style="color:#0d7377;">Team Akshaya builders & constructions</strong></p>
+        <p style="margin-top:24px;color:#5a7a7c;font-size:13px;">Best Regards,<br><strong style="color:#0d7377;">Team Akshaya Builders & Developers</strong></p>
       </div>
       <div class="footer">
-        <strong style="font-family:'Playfair Display',serif;font-size:16px;">Akshaya builders & constructions</strong><br>
+        <strong style="font-family:'Playfair Display',serif;font-size:16px;">Akshaya Builders & Developers</strong><br>
         <span style="opacity:0.7;margin-top:8px;display:inline-block;">Building Dreams, Crafting Futures</span>
       </div>
     </div>
@@ -203,7 +203,7 @@ export async function POST(request) {
 
       // Email 1: Notification to Admin
       await transporter.sendMail({
-        from: `"Akshaya builders & constructions Website" <${process.env.EMAIL_USER}>`,
+        from: `"Akshaya Builders & Developers Website" <${process.env.EMAIL_USER}>`,
         to: process.env.EMAIL_TO || process.env.EMAIL_USER,
         replyTo: contact.email,
         subject: `🔔 New Contact: ${contact.name} ${contact.subject ? `- ${contact.subject}` : ''}`,
@@ -212,9 +212,9 @@ export async function POST(request) {
 
       // Email 2: Auto-reply to User
       await transporter.sendMail({
-        from: `"Akshaya builders & constructions" <${process.env.EMAIL_USER}>`,
+        from: `"Akshaya Builders & Developers" <${process.env.EMAIL_USER}>`,
         to: contact.email,
-        subject: '✅ Thank you for contacting Akshaya builders & constructions',
+        subject: '✅ Thank you for contacting Akshaya Builders & Developers',
         html: getUserEmailHTML(contactData),
       });
 

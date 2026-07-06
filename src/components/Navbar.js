@@ -47,7 +47,7 @@ export default function Navbar() {
               <FaPhone size={11} /> +91 90000 13471
             </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#000000' }}>
-              <FaEnvelope size={11} /> Akshaya builders & constructionsinfratownships@gmail.com
+              <FaEnvelope size={11} /> Akshaya Builders & Developersinfratownships@gmail.com
             </span>
           </div>
           <div style={{ color: '#000000' }}>Your Dream Plot Awaits | RERA Approved</div>
@@ -77,19 +77,19 @@ export default function Navbar() {
             display: 'flex', 
             alignItems: 'center',
           }}>
-            <Image
-              src="/logooo.png"
-              alt="Akshaya builders & constructions"
-              width={180}
-              height={60}
-              priority
-              style={{
-                width: 'auto',
-                height: scrolled ? '90px' : '70px',
-                objectFit: 'contain',
-                transition: 'all 0.3s ease',
-              }}
-            />
+           <Image
+  src="/logooo.png"
+  alt="Akshaya Builders & Developers"
+  width={300}
+  height={120}
+  priority
+  style={{
+    width: 'auto',
+    height: scrolled ? '120px' : '100px', // Increased size
+    objectFit: 'contain',
+    transition: 'all 0.3s ease',
+  }}
+/>
           </Link>
 
           {/* Desktop Nav */}
@@ -167,17 +167,17 @@ export default function Navbar() {
                 display: 'flex',
                 justifyContent: 'center',
               }}>
-                <Image
-                  src="/logooo.png"
-                  alt="Akshaya builders & constructions"
-                  width={150}
-                  height={50}
-                  style={{
-                    width: 'auto',
-                    height: '50px',
-                    objectFit: 'contain',
-                  }}
-                />
+               <Image
+  src="/logooo.png"
+  alt="Akshaya Builders & Developers"
+  width={220}
+  height={80}
+  style={{
+    width: 'auto',
+    height: '80px',
+    objectFit: 'contain',
+  }}
+/>
               </div>
 
               {navLinks.map((link) => (

@@ -132,7 +132,7 @@ export default function GalleryPage() {
                 fontSize: 'clamp(28px, 5vw, 56px)',
                 fontWeight: '800',
                 marginBottom: '12px',
-              }}>Welcome to Akshaya builders & constructions</h1>
+              }}>Welcome to Akshaya Builders & Developers</h1>
               <p style={{ fontSize: '15px', opacity: 0.85 }}>
                 Admin can add hero slides from the dashboard
               </p>
