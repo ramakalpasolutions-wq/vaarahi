@@ -1082,7 +1082,7 @@ export default function AdminDashboard() {
 <div className="sidebar-logo">
   <img 
     src="/logooo.png" 
-    alt="Varahi Admin Panel" 
+    alt="Akshaya builders & constructions Admin Panel" 
     style={{ 
       width: '100%', 
       maxWidth: '180px',

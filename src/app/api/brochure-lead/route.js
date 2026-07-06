@@ -42,7 +42,7 @@ export async function POST(request) {
 
         // Email to ADMIN
         await transporter.sendMail({
-          from: `"Varahi Website" <${process.env.EMAIL_USER}>`,
+          from: `"Akshaya builders & constructions Website" <${process.env.EMAIL_USER}>`,
           to: process.env.ADMIN_EMAIL || process.env.EMAIL_USER,
           subject: `🔔 New Brochure Download - ${projectTitle}`,
           html: `
@@ -66,13 +66,13 @@ export async function POST(request) {
 
         // Email to USER with brochure link
         await transporter.sendMail({
-          from: `"Varahi Developers" <${process.env.EMAIL_USER}>`,
+          from: `"Akshaya builders & constructions Developers" <${process.env.EMAIL_USER}>`,
           to: email,
           subject: `📄 Your ${projectTitle} Brochure is Ready!`,
           html: `
             <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#fdf6ec;padding:30px;border-radius:12px;">
               <div style="text-align:center;margin-bottom:20px;">
-                <h1 style="color:#0d7377;font-family:Georgia,serif;margin:0;">VARAHI</h1>
+                <h1 style="color:#0d7377;font-family:Georgia,serif;margin:0;">Akshaya builders & constructions</h1>
               </div>
               <h2 style="color:#0d7377;">Hi ${name}, 👋</h2>
               <p style="color:#3a5a5c;font-size:15px;line-height:1.6;">
@@ -90,7 +90,7 @@ export async function POST(request) {
               </p>
               <hr style="border:none;border-top:1px solid #e8dfd0;margin:20px 0;">
               <p style="color:#999;font-size:11px;text-align:center;">
-                © ${new Date().getFullYear()} Varahi Developers. All rights reserved.
+                © ${new Date().getFullYear()} Akshaya builders & constructions Developers. All rights reserved.
               </p>
             </div>
           `,

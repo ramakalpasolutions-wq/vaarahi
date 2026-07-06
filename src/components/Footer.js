@@ -48,13 +48,13 @@ export default function Footer() {
     },
     {
       Icon: FaInstagram,
-      url: 'https://instagram.com/varahi_infra_townships?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+      url: 'https://instagram.com/Akshaya builders & constructions_infra_townships?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
       label: 'Instagram',
       color: '#e4405f',
     },
     {
       Icon: FaTwitter,
-      url: 'https://x.com/VarahiT56830',
+      url: 'https://x.com/Akshaya builders & constructionsT56830',
       label: 'Twitter',
       color: '#1da1f2',
     },
@@ -387,7 +387,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:varahiinfratownships@gmail.com"
+                href="mailto:Akshaya builders & constructionsinfratownships@gmail.com"
                 style={{
                   display: 'flex',
                   gap: '10px',
@@ -412,7 +412,7 @@ export default function Footer() {
                   wordBreak: 'break-all',
                   transition: 'color 0.3s ease',
                 }}>
-                  varahiinfratownships@gmail.com
+                  Akshaya builders & constructionsinfratownships@gmail.com
                 </span>
               </a>
             </div>

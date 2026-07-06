@@ -120,13 +120,13 @@ const getUserEmailHTML = (data) => `
 
         <p>In the meantime, feel free to explore our latest projects and offerings:</p>
         <center>
-          <a href="https://varahiinfra.com" class="btn">Visit Our Website</a>
+          <a href="https://Akshaya builders & constructionsinfra.com" class="btn">Visit Our Website</a>
         </center>
 
         <div class="contact-info">
           <h3 style="margin:0 0 12px;color:#0d7377;font-family:'Playfair Display',serif;">📞 Need Immediate Assistance?</h3>
           <p style="margin:6px 0;">📱 <strong>+91 98765 43210</strong></p>
-          <p style="margin:6px 0;">📧 <strong>info@varahiinfra.com</strong></p>
+          <p style="margin:6px 0;">📧 <strong>info@Akshaya builders & constructionsinfra.com</strong></p>
           <p style="margin:6px 0;">📍 Hyderabad, Telangana, India</p>
           <p style="margin:6px 0;">🕐 Mon-Sat: 9AM - 7PM</p>
         </div>
@@ -203,7 +203,7 @@ export async function POST(request) {
 
       // Email 1: Notification to Admin
       await transporter.sendMail({
-        from: `"Varahi Website" <${process.env.EMAIL_USER}>`,
+        from: `"Akshaya builders & constructions Website" <${process.env.EMAIL_USER}>`,
         to: process.env.EMAIL_TO || process.env.EMAIL_USER,
         replyTo: contact.email,
         subject: `🔔 New Contact: ${contact.name} ${contact.subject ? `- ${contact.subject}` : ''}`,

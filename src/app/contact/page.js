@@ -64,7 +64,7 @@ export default function ContactPage() {
   const contactInfo = [
     { icon: <FaMapMarkerAlt size={22} />, title: 'Visit Us', info: '#134-13, Amaravathi Rd, Nagaralu, Beside Kaveri Tiffin\'s, Guntur, 522034' },
     { icon: <FaPhone size={22} />, title: 'Call Us', info: '+91 90000 13471' },
-    { icon: <FaEnvelope size={22} />, title: 'Email Us', info: 'varahiinfratownships@gmail.com' },
+    { icon: <FaEnvelope size={22} />, title: 'Email Us', info: 'Akshaya builders & constructionsinfratownships@gmail.com' },
     { icon: <FaClock size={22} />, title: 'Hours', info: 'Mon-Sat: 9AM - 7PM' },
   ];
 
@@ -638,7 +638,7 @@ export default function ContactPage() {
             }}>
               <iframe
                 title="Akshaya builders & constructions Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7658.116035831448!2d80.42525939436054!3d16.319979534157184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8aee628e6d051e9f%3A0x19cd66b1013ac846!2sVarahi%20Infra%20Townships!5e0!3m2!1sen!2sin!4v1780638278745!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7658.116035831448!2d80.42525939436054!3d16.319979534157184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8aee628e6d051e9f%3A0x19cd66b1013ac846!2sAkshaya builders & constructions%20Infra%20Townships!5e0!3m2!1sen!2sin!4v1780638278745!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: isMobile ? '350px' : '500px' }}

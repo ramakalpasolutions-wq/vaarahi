@@ -239,7 +239,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ====== WHY CHOOSE VARAHI SECTION ====== */}
+      {/* ====== WHY CHOOSE Akshaya builders & constructions SECTION ====== */}
       <section style={{
         padding: 'clamp(60px, 10vw, 100px) 16px',
         background: '#f5f0e6',

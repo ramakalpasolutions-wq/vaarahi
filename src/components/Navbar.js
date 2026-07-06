@@ -47,7 +47,7 @@ export default function Navbar() {
               <FaPhone size={11} /> +91 90000 13471
             </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#000000' }}>
-              <FaEnvelope size={11} /> varahiinfratownships@gmail.com
+              <FaEnvelope size={11} /> Akshaya builders & constructionsinfratownships@gmail.com
             </span>
           </div>
           <div style={{ color: '#000000' }}>Your Dream Plot Awaits | RERA Approved</div>

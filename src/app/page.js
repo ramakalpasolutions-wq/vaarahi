@@ -44,9 +44,9 @@ export default function Home() {
         setProjects(data.data.slice(0, 3));
       } else {
         setProjects([
-          { _id: '1', title: 'Varahi Green City', location: 'Hyderabad', status: 'ongoing', images: [], description: 'Premium plots with lush green surroundings' },
-          { _id: '2', title: 'Varahi Royal Gardens', location: 'Shamshabad', status: 'ongoing', images: [], description: 'Royal living with world-class amenities' },
-          { _id: '3', title: 'Varahi Palm Meadows', location: 'Maheshwaram', status: 'upcoming', images: [], description: 'Peaceful meadow living at affordable prices' },
+          { _id: '1', title: 'Akshaya builders & constructions Green City', location: 'Hyderabad', status: 'ongoing', images: [], description: 'Premium plots with lush green surroundings' },
+          { _id: '2', title: 'Akshaya builders & constructions Royal Gardens', location: 'Shamshabad', status: 'ongoing', images: [], description: 'Royal living with world-class amenities' },
+          { _id: '3', title: 'Akshaya builders & constructions Palm Meadows', location: 'Maheshwaram', status: 'upcoming', images: [], description: 'Peaceful meadow living at affordable prices' },
         ]);
       }
     } catch { }
