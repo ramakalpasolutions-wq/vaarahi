@@ -83,7 +83,7 @@ export default function Home() {
     {
       icon: <FaHeadset size={22} />,
       title: 'Post-Sales Support',
-      desc: 'At Varahi Infra Townships, our commitment doesn\'t end at handover. We offer continued customer support, assistance with property maintenance, and value-added services to ensure your investment remains rewarding long after purchase.',
+      desc: 'At Akshaya builders & constructions, our commitment doesn\'t end at handover. We offer continued customer support, assistance with property maintenance, and value-added services to ensure your investment remains rewarding long after purchase.',
       color: '#14919b',
     },
     {

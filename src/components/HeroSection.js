@@ -100,7 +100,7 @@ export default function HeroSection({
             color: '#fdf6ec',
             marginBottom: '16px',
           }}>
-            {title || 'Welcome to Varahi Infra'}
+            {title || 'Welcome to Akshaya builders & constructions'}
           </h1>
           <p style={{ color: 'rgba(253,246,236,0.7)', fontSize: '16px' }}>
             {description || 'Admin can add hero slides from the dashboard'}

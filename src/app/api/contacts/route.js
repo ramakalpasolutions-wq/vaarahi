@@ -40,7 +40,7 @@ const getAdminEmailHTML = (data) => `
     <div class="container">
       <div class="header">
         <h1>🔔 New Contact Inquiry</h1>
-        <p>Varahi Infra Website</p>
+        <p>Akshaya builders & constructions Website</p>
         <div class="badge">NEW MESSAGE</div>
       </div>
       <div class="body">
@@ -71,7 +71,7 @@ const getAdminEmailHTML = (data) => `
         </div>
       </div>
       <div class="footer">
-        <strong style="font-family:'Playfair Display',serif;font-size:14px;">VARAHI INFRA</strong><br>
+        <strong style="font-family:'Playfair Display',serif;font-size:14px;">Akshaya builders & constructions</strong><br>
         <span style="opacity:0.7;">Reply directly to this email to contact ${data.name}</span>
       </div>
     </div>
@@ -109,7 +109,7 @@ const getUserEmailHTML = (data) => `
       </div>
       <div class="body">
         <p>Dear <strong>${data.name}</strong>,</p>
-        <p>Thank you for reaching out to <strong style="color:#0d7377;">Varahi Infra</strong>! We've received your inquiry and our team will get back to you within <strong style="color:#ff6b35;">24 hours</strong>.</p>
+        <p>Thank you for reaching out to <strong style="color:#0d7377;">Akshaya builders & constructions</strong>! We've received your inquiry and our team will get back to you within <strong style="color:#ff6b35;">24 hours</strong>.</p>
         
         <div class="summary">
           <h3 style="margin:0 0 10px;color:#0d7377;font-size:14px;">📝 Your Message Summary:</h3>
@@ -131,10 +131,10 @@ const getUserEmailHTML = (data) => `
           <p style="margin:6px 0;">🕐 Mon-Sat: 9AM - 7PM</p>
         </div>
 
-        <p style="margin-top:24px;color:#5a7a7c;font-size:13px;">Best Regards,<br><strong style="color:#0d7377;">Team Varahi Infra</strong></p>
+        <p style="margin-top:24px;color:#5a7a7c;font-size:13px;">Best Regards,<br><strong style="color:#0d7377;">Team Akshaya builders & constructions</strong></p>
       </div>
       <div class="footer">
-        <strong style="font-family:'Playfair Display',serif;font-size:16px;">VARAHI INFRA</strong><br>
+        <strong style="font-family:'Playfair Display',serif;font-size:16px;">Akshaya builders & constructions</strong><br>
         <span style="opacity:0.7;margin-top:8px;display:inline-block;">Building Dreams, Crafting Futures</span>
       </div>
     </div>
@@ -212,9 +212,9 @@ export async function POST(request) {
 
       // Email 2: Auto-reply to User
       await transporter.sendMail({
-        from: `"Varahi Infra" <${process.env.EMAIL_USER}>`,
+        from: `"Akshaya builders & constructions" <${process.env.EMAIL_USER}>`,
         to: contact.email,
-        subject: '✅ Thank you for contacting Varahi Infra',
+        subject: '✅ Thank you for contacting Akshaya builders & constructions',
         html: getUserEmailHTML(contactData),
       });
 

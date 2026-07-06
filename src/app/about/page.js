@@ -44,7 +44,7 @@ export default function About() {
     {
       icon: <FaMapMarkerAlt size={26} />,
       title: 'Prime Locations with Growth Potential',
-      desc: 'Varahi Infra offers open plots, villas, and apartments in fast-growing locations with excellent connectivity, promising high appreciation, modern comfort, and a smooth home-buying experience.',
+      desc: 'Akshaya builders & constructions offers open plots, villas, and apartments in fast-growing locations with excellent connectivity, promising high appreciation, modern comfort, and a smooth home-buying experience.',
       color: '#ff6b35',
     },
     {
@@ -74,7 +74,7 @@ export default function About() {
     {
       icon: <FaChartLine size={26} />,
       title: 'Future-Ready Investments',
-      desc: 'Varahi Infra focuses on sustainable development and modern designs, ensuring every plot, villa, or apartment remains valuable for years to come.',
+      desc: 'Akshaya builders & constructions focuses on sustainable development and modern designs, ensuring every plot, villa, or apartment remains valuable for years to come.',
       color: '#d63384',
     },
   ];
@@ -90,7 +90,7 @@ export default function About() {
     {
       _id: 't2',
       title: 'Kondaveeti Dheva Raaja',
-      description: 'Director|Dheva Mithra Raaja Kondaveeti guides Varahi Infra Developers in Guntur with vision and integrity, creating innovative, high-quality real estate projects.',
+      description: 'Director|Dheva Mithra Raaja Kondaveeti guides Akshaya builders & constructions Developers in Guntur with vision and integrity, creating innovative, high-quality real estate projects.',
       imageUrl: '/Director.jpg',  // ✅ from public folder
     },
   ];
@@ -134,7 +134,7 @@ export default function About() {
                 letterSpacing: '3px',
                 textTransform: 'uppercase',
                 marginBottom: '20px',
-              }}>About Varahi Infra Townships</span>
+              }}>About Akshaya builders & constructions</span>
 
               <h2 style={{
                 fontFamily: "'Playfair Display', serif",
@@ -154,7 +154,7 @@ export default function About() {
                 fontSize: '15px',
                 marginBottom: '32px',
               }}>
-                Varahi Infra Townships offers premium open plots in prime locations,
+                Akshaya builders & constructions offers premium open plots in prime locations,
                 thoughtfully planned for sustainable growth and long-term value.
                 Build your dream home or invest confidently in projects designed
                 with quality, transparency, and innovation.
@@ -253,7 +253,7 @@ export default function About() {
               color: '#0a1a1b',
               marginBottom: '16px',
             }}>
-              Why Choose Varahi Infra <br /> Townships?
+              Why Choose Akshaya builders & constructions <br /> Townships?
             </h2>
             <p style={{
               color: '#5a7a7c',
@@ -262,7 +262,7 @@ export default function About() {
               maxWidth: '750px',
               margin: '0 auto',
             }}>
-              Varahi Infra Townships offers well-planned open plots in prime locations
+              Akshaya builders & constructions offers well-planned open plots in prime locations
               with clear titles, quality infrastructure, and transparent dealings
               for a secure investment.
             </p>

@@ -79,7 +79,7 @@ export default function Navbar() {
           }}>
             <Image
               src="/logooo.png"
-              alt="Varahi Infra Townships"
+              alt="Akshaya builders & constructions"
               width={180}
               height={60}
               priority
@@ -169,7 +169,7 @@ export default function Navbar() {
               }}>
                 <Image
                   src="/logooo.png"
-                  alt="Varahi Infra Townships"
+                  alt="Akshaya builders & constructions"
                   width={150}
                   height={50}
                   style={{

@@ -134,7 +134,7 @@ export default function Footer() {
               <Link href="/" style={{ display: 'inline-block' }}>
                 <Image
                   src="/logooo.png"
-                  alt="Varahi Infra Townships"
+                  alt="Akshaya builders & constructions"
                   width={200}
                   height={80}
                   style={{
@@ -431,7 +431,7 @@ export default function Footer() {
           fontSize: isMobile ? '12px' : '13px',
           margin: 0,
         }}>
-          © {new Date().getFullYear()} Varahi Infra Townships. All Rights Reserved.
+          © {new Date().getFullYear()} Akshaya builders & constructions. All Rights Reserved.
         </p>
       </div>
     </footer>

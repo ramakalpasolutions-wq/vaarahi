@@ -637,7 +637,7 @@ export default function ContactPage() {
               boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
             }}>
               <iframe
-                title="Varahi Infra Townships Location"
+                title="Akshaya builders & constructions Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7658.116035831448!2d80.42525939436054!3d16.319979534157184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8aee628e6d051e9f%3A0x19cd66b1013ac846!2sVarahi%20Infra%20Townships!5e0!3m2!1sen!2sin!4v1780638278745!5m2!1sen!2sin"
                 width="100%"
                 height="100%"

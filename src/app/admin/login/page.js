@@ -595,7 +595,7 @@ export default function AdminLogin() {
           </div>
 
           <h1 className="card-title">Admin Panel</h1>
-          <p className="card-sub">Varahi Infra Townships</p>
+          <p className="card-sub">Akshaya builders & constructions</p>
 
           <form onSubmit={handleLogin}>
             <div>
