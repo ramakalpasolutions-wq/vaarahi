@@ -69,7 +69,7 @@ export default function HeroSlider({ slides = [], autoScrollSeconds = 5, height 
             color: '#fdf6ec',
             marginBottom: '16px',
           }}>
-            Welcome to Akshaya Builders & Developers
+            Welcome to Akshaya builders & constructions
           </h1>
           <p style={{ color: 'rgba(253,246,236,0.7)', fontSize: '16px' }}>
             Admin can add hero slides from the dashboard

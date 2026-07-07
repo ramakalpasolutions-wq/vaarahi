@@ -44,7 +44,7 @@ export default function About() {
     {
       icon: <FaMapMarkerAlt size={26} />,
       title: 'Prime Locations with Growth Potential',
-      desc: 'Akshaya Builders & Developers offers open plots, villas, and apartments in fast-growing locations with excellent connectivity, promising high appreciation, modern comfort, and a smooth home-buying experience.',
+      desc: 'Akshaya builders & constructions offers open plots, villas, and apartments in fast-growing locations with excellent connectivity, promising high appreciation, modern comfort, and a smooth home-buying experience.',
       color: '#ff6b35',
     },
     {
@@ -74,7 +74,7 @@ export default function About() {
     {
       icon: <FaChartLine size={26} />,
       title: 'Future-Ready Investments',
-      desc: 'Akshaya Builders & Developers focuses on sustainable development and modern designs, ensuring every plot, villa, or apartment remains valuable for years to come.',
+      desc: 'Akshaya builders & constructions focuses on sustainable development and modern designs, ensuring every plot, villa, or apartment remains valuable for years to come.',
       color: '#d63384',
     },
   ];
@@ -90,7 +90,7 @@ export default function About() {
     {
       _id: 't2',
       title: 'Kondaveeti Dheva Raaja',
-      description: 'Director|Dheva Mithra Raaja Kondaveeti guides Akshaya Builders & Developers Developers in Guntur with vision and integrity, creating innovative, high-quality real estate projects.',
+      description: 'Director|Dheva Mithra Raaja Kondaveeti guides Akshaya builders & constructions Developers in Guntur with vision and integrity, creating innovative, high-quality real estate projects.',
       imageUrl: '/Director.jpg',  // ✅ from public folder
     },
   ];
@@ -134,7 +134,7 @@ export default function About() {
                 letterSpacing: '3px',
                 textTransform: 'uppercase',
                 marginBottom: '20px',
-              }}>About Akshaya Builders & Developers</span>
+              }}>About Akshaya builders & constructions</span>
 
               <h2 style={{
                 fontFamily: "'Playfair Display', serif",
@@ -154,7 +154,7 @@ export default function About() {
                 fontSize: '15px',
                 marginBottom: '32px',
               }}>
-                Akshaya Builders & Developers offers premium open plots in prime locations,
+                Akshaya builders & constructions offers premium open plots in prime locations,
                 thoughtfully planned for sustainable growth and long-term value.
                 Build your dream home or invest confidently in projects designed
                 with quality, transparency, and innovation.
@@ -239,7 +239,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ====== WHY CHOOSE Akshaya Builders & Developers SECTION ====== */}
+      {/* ====== WHY CHOOSE Akshaya builders & constructions SECTION ====== */}
       <section style={{
         padding: 'clamp(60px, 10vw, 100px) 16px',
         background: '#f5f0e6',
@@ -253,7 +253,7 @@ export default function About() {
               color: '#0a1a1b',
               marginBottom: '16px',
             }}>
-              Why Choose Akshaya Builders & Developers <br /> Townships?
+              Why Choose Akshaya builders & constructions <br /> Townships?
             </h2>
             <p style={{
               color: '#5a7a7c',
@@ -262,7 +262,7 @@ export default function About() {
               maxWidth: '750px',
               margin: '0 auto',
             }}>
-              Akshaya Builders & Developers offers well-planned open plots in prime locations
+              Akshaya builders & constructions offers well-planned open plots in prime locations
               with clear titles, quality infrastructure, and transparent dealings
               for a secure investment.
             </p>
@@ -332,99 +332,8 @@ export default function About() {
       </section>
 
       {/* ====== MEET OUR TEAM SECTION ====== */}
-      <section style={{
-        padding: 'clamp(60px, 10vw, 100px) 16px',
-        background: '#ffffff',
-      }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: 'clamp(28px, 4vw, 44px)',
-              fontWeight: '800',
-              color: '#0a1a1b',
-              marginBottom: '16px',
-            }}>
-              Meet Our Team
-            </h2>
-            <p style={{
-              color: '#5a7a7c',
-              fontSize: '15px',
-              lineHeight: '1.7',
-              maxWidth: '700px',
-              margin: '0 auto',
-            }}>
-              Our leadership team brings decades of experience in real estate,
-              guiding our projects with vision, integrity, and excellence.
-              From strategic planning to client relations, our experts ensure
-              every venture is built for success.
-            </p>
-          </div>
-
-          {/* Team Members */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '48px',
-            maxWidth: '900px',
-            margin: '0 auto',
-          }}>
-            {displayTeam.slice(0, 2).map((member, i) => {
-              const parts = (member.description || '').split('|');
-              const role = parts[0] || 'Team Member';
-              const bio = parts[1] || member.description || '';
-
-              return (
-                <div key={member._id || i} style={{
-                  textAlign: 'center',
-                }}>
-                  {/* Team Image */}
-                  <div style={{
-                    width: '100%',
-                    height: '380px',
-                    borderRadius: '20px',
-                    background: `url(${member.imageUrl}) center/cover no-repeat`,
-                    marginBottom: '24px',
-                    boxShadow: '0 20px 50px rgba(0,0,0,0.12)',
-                    position: 'relative',
-                    overflow: 'hidden',
-                  }} />
-
-                  <h3 style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: '24px',
-                    fontWeight: '800',
-                    color: '#0a1a1b',
-                    marginBottom: '6px',
-                  }}>
-                    {member.title}
-                  </h3>
-
-                  <p style={{
-                    color: '#5a7a7c',
-                    fontSize: '15px',
-                    fontWeight: '500',
-                    marginBottom: '14px',
-                    fontStyle: 'italic',
-                  }}>
-                    {role}
-                  </p>
-
-                  <p style={{
-                    color: '#3F9AAE',
-                    fontSize: '14px',
-                    lineHeight: '1.7',
-                    fontWeight: '500',
-                  }}>
-                    {bio}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
+      
+        
       <CTA />
       <Footer />
     </>

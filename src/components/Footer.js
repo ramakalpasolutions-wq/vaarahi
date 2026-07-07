@@ -48,13 +48,13 @@ export default function Footer() {
     },
     {
       Icon: FaInstagram,
-      url: 'https://instagram.com/Akshaya Builders & Developers_infra_townships?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+      url: 'https://instagram.com/Akshaya builders & constructions_infra_townships?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
       label: 'Instagram',
       color: '#e4405f',
     },
     {
       Icon: FaTwitter,
-      url: 'https://x.com/Akshaya Builders & DevelopersT56830',
+      url: 'https://x.com/Akshaya builders & constructionsT56830',
       label: 'Twitter',
       color: '#1da1f2',
     },
@@ -134,7 +134,7 @@ export default function Footer() {
               <Link href="/" style={{ display: 'inline-block' }}>
                 <Image
   src="/logooo.png"
-  alt="Akshaya Builders & Developers"
+  alt="Akshaya builders & constructions"
   width={320}
   height={120}
   style={{
@@ -358,7 +358,7 @@ export default function Footer() {
               </div>
 
               <a
-                href="tel:+919000013471"
+                href="tel:+91 9494357236"
                 style={{
                   display: 'flex',
                   gap: '10px',
@@ -382,12 +382,12 @@ export default function Footer() {
                   fontSize: '14px',
                   transition: 'color 0.3s ease',
                 }}>
-                  +91 90000 13471
+                  +91  94943 57236
                 </span>
               </a>
 
               <a
-                href="mailto:Akshaya Builders & Developersinfratownships@gmail.com"
+                href="mailto:Akshaya builders & constructions @gmail.com"
                 style={{
                   display: 'flex',
                   gap: '10px',
@@ -412,7 +412,7 @@ export default function Footer() {
                   wordBreak: 'break-all',
                   transition: 'color 0.3s ease',
                 }}>
-                  Akshaya Builders & Developersinfratownships@gmail.com
+                  Akshaya builders & constructions @gmail.com
                 </span>
               </a>
             </div>
@@ -431,7 +431,7 @@ export default function Footer() {
           fontSize: isMobile ? '12px' : '13px',
           margin: 0,
         }}>
-          © {new Date().getFullYear()} Akshaya Builders & Developers. All Rights Reserved.
+          © {new Date().getFullYear()} Akshaya builders & constructions. All Rights Reserved.
         </p>
       </div>
     </footer>

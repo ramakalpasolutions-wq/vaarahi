@@ -2,8 +2,8 @@ import { Toaster } from 'react-hot-toast';
 import './globals.css';
 
 export const metadata = {
-  title: 'Akshaya Builders & Developers - Premium Real Estate',
-  description: 'Akshaya Builders & Developers offers premium plots and residential projects with world-class amenities.',
+  title: 'Akshaya builders & constructions - Premium Real Estate',
+  description: 'Akshaya builders & constructions offers premium plots and residential projects with world-class amenities.',
 };
 
 export default function RootLayout({ children }) {

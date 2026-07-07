@@ -62,5 +62,5 @@ export const authOptions = {
   pages: {
     signIn: '/admin/login',
   },
-  secret: process.env.NEXTAUTH_SECRET || 'Akshaya Builders & Developers-super-secret-key-2024',
+  secret: process.env.NEXTAUTH_SECRET || 'Akshaya builders & constructions-super-secret-key-2024',
 };

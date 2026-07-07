@@ -44,9 +44,9 @@ export default function Home() {
         setProjects(data.data.slice(0, 3));
       } else {
         setProjects([
-          { _id: '1', title: 'Akshaya Builders & Developers Green City', location: 'Hyderabad', status: 'ongoing', images: [], description: 'Premium plots with lush green surroundings' },
-          { _id: '2', title: 'Akshaya Builders & Developers Royal Gardens', location: 'Shamshabad', status: 'ongoing', images: [], description: 'Royal living with world-class amenities' },
-          { _id: '3', title: 'Akshaya Builders & Developers Palm Meadows', location: 'Maheshwaram', status: 'upcoming', images: [], description: 'Peaceful meadow living at affordable prices' },
+          { _id: '1', title: 'Akshaya builders & constructions Green City', location: 'Hyderabad', status: 'ongoing', images: [], description: 'Premium plots with lush green surroundings' },
+          { _id: '2', title: 'Akshaya builders & constructions Royal Gardens', location: 'Shamshabad', status: 'ongoing', images: [], description: 'Royal living with world-class amenities' },
+          { _id: '3', title: 'Akshaya builders & constructions Palm Meadows', location: 'Maheshwaram', status: 'upcoming', images: [], description: 'Peaceful meadow living at affordable prices' },
         ]);
       }
     } catch { }
@@ -83,21 +83,21 @@ export default function Home() {
     {
       icon: <FaHeadset size={22} />,
       title: 'Post-Sales Support',
-      desc: 'At Akshaya Builders & Developers, our commitment doesn\'t end at handover. We offer continued customer support, assistance with property maintenance, and value-added services to ensure your investment remains rewarding long after purchase.',
+      desc: 'At Akshaya builders & constructions, our commitment doesn\'t end at handover. We offer continued customer support, assistance with property maintenance, and value-added services to ensure your investment remains rewarding long after purchase.',
       color: '#14919b',
     },
-    {
-      icon: <FaCheckCircle size={22} />,
-      title: 'CRDA Approved Plots',
-      desc: 'All our plots are CRDA approved with government certification ensuring 100% legal compliance and clear titles.',
-      color: '#0d7377',
-    },
-    {
-      icon: <FaShieldAlt size={22} />,
-      title: 'RERA Approved',
-      desc: 'RERA registered projects with complete transparency, legal documentation, and timely delivery guarantee.',
-      color: '#ff8c5a',
-    },
+    // {
+    //   icon: <FaCheckCircle size={22} />,
+    //   title: 'CRDA Approved Plots',
+    //   desc: 'All our plots are CRDA approved with government certification ensuring 100% legal compliance and clear titles.',
+    //   color: '#0d7377',
+    // },
+    // {
+    //   icon: <FaShieldAlt size={22} />,
+    //   title: 'RERA Approved',
+    //   desc: 'RERA registered projects with complete transparency, legal documentation, and timely delivery guarantee.',
+    //   color: '#ff8c5a',
+    // },
   ];
 
   const defaultPlotTypes = [

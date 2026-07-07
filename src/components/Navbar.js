@@ -44,10 +44,10 @@ export default function Navbar() {
         }}>
           <div style={{ display: 'flex', gap: '24px' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#000000' }}>
-              <FaPhone size={11} /> +91 90000 13471
+              <FaPhone size={11} /> +91 94943 57236
             </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#000000' }}>
-              <FaEnvelope size={11} /> Akshaya Builders & Developersinfratownships@gmail.com
+              <FaEnvelope size={11} /> Akshaya builders & constructions @gmail.com
             </span>
           </div>
           <div style={{ color: '#000000' }}>Your Dream Plot Awaits | RERA Approved</div>
@@ -79,7 +79,7 @@ export default function Navbar() {
           }}>
            <Image
   src="/logooo.png"
-  alt="Akshaya Builders & Developers"
+  alt="Akshaya builders & constructions"
   width={300}
   height={120}
   priority
@@ -169,7 +169,7 @@ export default function Navbar() {
               }}>
                <Image
   src="/logooo.png"
-  alt="Akshaya Builders & Developers"
+  alt="Akshaya builders & constructions"
   width={220}
   height={80}
   style={{
