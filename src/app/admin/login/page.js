@@ -15,7 +15,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setLoading(true);
     setTimeout(() => {
-      if (email === 'admin@Akshayabuilders&constructions.com' && password === 'Akshayabuilders&constructions@2024') {
+      if (email === 'admin@varahi.com' && password === 'varahi@2024') {
         localStorage.setItem('adminAuth', JSON.stringify({ email, loggedIn: true, time: Date.now() }));
         toast.success('Welcome back, Admin!');
         router.push('/admin/dashboard');
@@ -27,8 +27,8 @@ export default function AdminLogin() {
   };
 
   const fillCredentials = () => {
-    setEmail('admin@Akshaya builders & constructions.com');
-    setPassword('Akshaya builders & constructions@2024');
+    setEmail('admin@varahi.com');
+    setPassword('varahi@2024');
     toast.success('Credentials filled!');
   };
 
@@ -591,11 +591,11 @@ export default function AdminLogin() {
           {/* LOGO with glow */}
           <div className="logo-wrap">
             <div className="logo-glow" />
-            <img src="/logooo.png" alt="Akshaya builders & constructions Logo" className="logo-img" />
+            <img src="/logooo.png" alt="Varahi Logo" className="logo-img" />
           </div>
 
           <h1 className="card-title">Admin Panel</h1>
-          <p className="card-sub">Akshaya builders & constructions</p>
+          <p className="card-sub">Varahi Infra Townships</p>
 
           <form onSubmit={handleLogin}>
             <div>
@@ -607,7 +607,7 @@ export default function AdminLogin() {
                   type="email"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
-                  placeholder="admin@Akshaya builders & constructions.com"
+                  placeholder="admin@varahi.com"
                   required
                 />
               </div>
@@ -650,11 +650,11 @@ export default function AdminLogin() {
             <div className="demo-head"><FaUserShield size={11} /> Demo Credentials</div>
             <div className="demo-row">
               <span className="demo-lbl">Email</span>
-              <span className="demo-val">admin@Akshaya builders & constructions.com</span>
+              <span className="demo-val">admin@varahi.com</span>
             </div>
             <div className="demo-row">
               <span className="demo-lbl">Password</span>
-              <span className="demo-val">Akshaya builders & constructions@2024</span>
+              <span className="demo-val">varahi@2024</span>
             </div>
             <button className="fill-btn" onClick={fillCredentials}>⚡ Auto-Fill</button>
           </div>
