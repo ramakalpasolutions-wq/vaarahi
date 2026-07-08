@@ -15,7 +15,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setLoading(true);
     setTimeout(() => {
-      if (email === 'admin@Akshaya builders & constructions.com' && password === 'Akshaya builders & constructions@2024') {
+      if (email === 'admin@Akshayabuilders&constructions.com' && password === 'Akshayabuilders&constructions@2024') {
         localStorage.setItem('adminAuth', JSON.stringify({ email, loggedIn: true, time: Date.now() }));
         toast.success('Welcome back, Admin!');
         router.push('/admin/dashboard');
